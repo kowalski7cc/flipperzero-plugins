@@ -523,6 +523,8 @@ int32_t barcode_UPCA_generator_app(void* p) {
                             plugin_state->modeIndex = 0;
                         }
                         break;
+                    default:
+                        break;
                     }
                 }
             }

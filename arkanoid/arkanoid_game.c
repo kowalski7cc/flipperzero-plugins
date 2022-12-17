@@ -413,10 +413,6 @@ int32_t arkanoid_game_app(void* p) {
                             arkanoid_state->xPaddle -= 8;
                         }
                         break;
-                    case InputKeyUp:
-                        break;
-                    case InputKeyDown:
-                        break;
                     case InputKeyOk:
                         if(arkanoid_state->gameStarted == false) {
                             //Release ball if FIRE pressed
@@ -435,6 +431,8 @@ int32_t arkanoid_game_app(void* p) {
                             arkanoid_state->gameStarted = true;
                             break;
                         }
+                    default:
+                        break;
                     }
                 }
             }

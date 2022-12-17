@@ -452,10 +452,6 @@ int32_t dice_app(void* p) {
             if(event.type == EventTypeKey) {
                 if(event.input.type == InputTypeShort || event.input.type == InputTypeRepeat) {
                     switch(event.input.key) {
-                    case InputKeyUp:
-                        break;
-                    case InputKeyDown:
-                        break;
                     case InputKeyRight:
                         if(plugin_state->diceSelect == 2) {
                             plugin_state->diceSelect = 3;
@@ -511,6 +507,8 @@ int32_t dice_app(void* p) {
                         break;
                     case InputKeyBack:
                         processing = false;
+                        break;
+                    default:
                         break;
                     }
                 }
